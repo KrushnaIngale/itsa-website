@@ -343,6 +343,9 @@ const galleryEvents = [
       "/assets/gallery/2024-25/posterpresentation_republicday/3.png",
       "/assets/gallery/2024-25/posterpresentation_republicday/4.png",
       "/assets/gallery/2024-25/posterpresentation_republicday/5.png",
+      "/assets/gallery/2024-25/posterpresentation_republicday/republicday1.jpg",
+      "/assets/gallery/2024-25/posterpresentation_republicday/republicday2.jpg",
+      // "/assets/gallery/2024-25/posterpresentation_republicday/republicday3.mp4",
       // ... (all poster/republic day photos)
     ]
   }
