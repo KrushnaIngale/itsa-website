@@ -114,7 +114,7 @@ export default function Footer() {
         <span>© 2025 ITSA. All rights reserved.</span>
         <span className="hidden sm:inline">|</span>
         <span className="flex items-center gap-1">
-          Made with <FaHeart className="text-pink-400" /> by ITSA Club.
+          Made with <FaHeart className="text-pink-400" /> by Krushna Ingale-ITSA Club.
         </span>
       </div>
     </footer>
