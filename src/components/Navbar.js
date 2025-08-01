@@ -15,7 +15,6 @@ const navLinks = [
   { label: "Contact", path: "/contact", icon: <EnvelopeIcon className="w-6 h-6 mr-2" /> },
 ];
 
-const glow = "shadow-[0_0_32px_0_rgba(103,232,249,0.28),0_2px_8px_0_rgba(124,58,237,0.13)]";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
