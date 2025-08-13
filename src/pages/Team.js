@@ -267,9 +267,9 @@ const TEAM_BY_YEAR = {
     {
       committee: "Faculty Coordinators",
       members: [
-        { name: "Dr. A. D. Sawarkar", role: "Faculty Coordinator", img: "/assets/team/2025-26/faculty/ads.png" },
+        { name: "Dr. A. D. Sawarkar", role: "Faculty Coordinator", img: "/assets/team/2025-26/faculty/ads2.png" },
         { name: "Dr. G. K. Pakle", role: "Head of Department", img: "/assets/team/2025-26/faculty/hod.png" },
-        { name: "Prof. S. B. Dethe", role: "Dean Student Affairs", img: "/assets/team/2025-26/techincal/exe.png" }
+        { name: "Prof. S. B. Dethe", role: "Dean Student Affairs", img: "/assets/team/2025-26/faculty/sbd.png" }
       ]
     },
     {
@@ -284,7 +284,7 @@ const TEAM_BY_YEAR = {
       members: [
         { name: "Krushna Ingale", role: "Technical Head" , img: "/assets/team/2025-26/techincal/Krushna Ingale.jpg" },
         { name: "Mrunmai Wadgaonkar", role: "Technical Head", img: "/assets/team/2025-26/techincal/Mrunmai Wadgaonkar.jpg" },
-        { name: "Ramprasad Londhe", role: "Technical Main Co-ordinator", img: "/assets/team/2025-26/techincal/exe.png" },
+        { name: "Ramprasad Londhe", role: "Technical Main Co-ordinator", img: "/assets/team/2025-26/techincal/Ramprasad Londhe.jpg" },
         { name: "Pratik Shinde", role: "Technical Main Co-ordinator", img: "/assets/team/2025-26/techincal/Pratik shinde.jpg" },
         { name: "Dharmraj Deshmukh", role: "Technical Co-head" ,img: "/assets/team/2025-26/techincal/Dharamveer Deshmukh.jpg" },
         { name: "Bhushan Chaudhari", role: "Technical Joint Co-ordinator", img: "/assets/team/2025-26/techincal/BHUSHAN CHARANDAS CHAUDHARI.jpg" }
@@ -297,16 +297,16 @@ const TEAM_BY_YEAR = {
         { name: "Shailesh Kasbekar", role: "Sports Main Co-ordinator", img: "/assets/team/2025-26/sports/Shailesh kasbekar.jpg" },
         { name: "Sonam Chandel", role: "Sports Main Co-ordinator", img: "/assets/team/2025-26/sports/Sonam Chandel.jpg" },
         { name: "Vardhan Wanjari", role: "Sports Co-head", img: "/assets/team/2025-26/sports/VARDHAN UMESH WANJARI.jpg"  },
-        { name: "Yash Bangalkar", role: "Sports Joint Co-ordinator", img: "/assets/team/2025-26/sports/exe.png"  }
+        { name: "Yash Bangalkar", role: "Sports Joint Co-ordinator", img: "/assets/team/2025-26/sports/YASH BANGALKAR.jpg"  }
       ]
     },
     {
       committee: "Cultural Committee",
       members: [
-        { name: "Shreyash Talankar", role: "Cultural Head", img: "/assets/team/2025-26/techincal/exe.png"  },
-        { name: "Mansi Jagtap", role: "Cultural Main Co-ordinator", img: "/assets/team/2025-26/techincal/exe.png" },
+        { name: "Shreyash Talankar", role: "Cultural Head", img: "/assets/team/2025-26/cultural/SHREYAS GAJANANSWAMI TALANKAR.jpeg"  },
+        { name: "Mansi Jagtap", role: "Cultural Main Co-ordinator", img: "/assets/team/2025-26/cultural/MANSI SATISH JAGTAP.jpg" },
         { name: "Rahul Ambore", role: "Cultural Main Co-ordinator", img: "/assets/team/2025-26/cultural/Rahul Ambhore.jpg" },
-        { name: "Nandini Chintewad", role: "Cultural Co-head", img: "/assets/team/2025-26/techincal/exe.png" },
+        { name: "Nandini Chintewad", role: "Cultural Co-head", img: "/assets/team/2025-26/cultural/NANDINI CHINTEWAD.jpg" },
         { name: "Mayuri Avalwar", role: "Cultural Co-head", img: "/assets/team/2025-26/techincal/exe.png" },
         { name: "Shravani kharwadkar", role: "Cultural Joint Co-ordinator" ,img: "/assets/team/2025-26/cultural/SHRAVANI SUSHIL KHARWADKAR.jpg"  }
       ]
@@ -325,7 +325,7 @@ const TEAM_BY_YEAR = {
       members: [
         { name: "Sukhbir Singh", role: "Finance Head", img: "/assets/team/2025-26/finance/SUKHBIR SINGH POTHIWAL.jpg" },
         { name: "Chinmay Kulkarni", role: "Finance Main Co-ordinator", img: "/assets/team/2025-26/finance/Chinmay Kulkarni.png" },
-        { name: "Rohan Mane", role: "Finance Main Co-ordinator", img: "/assets/team/2025-26/finance/exe.png" },
+        // { name: "Rohan Mane", role: "Finance Main Co-ordinator", img: "/assets/team/2025-26/anchor/Rohan Mane.jpg" },
         { name: "Alok Singh", role: "Finance Co-head", img: "/assets/team/2025-26/finance/ALOK KANCHANESH SINGH.jpg" },
         { name: "Virendrasingh Pujari", role: "Finance Joint Co-ordinator", img: "/assets/team/2025-26/finance/exe.png" }
       ]
@@ -335,7 +335,7 @@ const TEAM_BY_YEAR = {
       members: [
         { name: "Jaskiran Kaur", role: "Anchoring Head" ,img: "/assets/team/2025-26/anchor/JASKIRANDEEP KAUR RAJVINDER SINGH CHAHAL.jpeg" },
         { name: "Priti Sanghai", role: "Anchoring Main Co-ordinator", img: "/assets/team/2025-26/anchor/PRITI VISHAL SANGHAI.jpg" },
-        { name: "Rohan Mane", role: "Anchoring Main Co-ordinator", img: "/assets/team/2025-26/anchor/exe.png" },
+        { name: "Rohan Mane", role: "Anchoring Main Co-ordinator", img: "/assets/team/2025-26/anchor/Rohan Mane.jpg" },
         { name: "Divya Kalantre", role: "Anchoring Joint Co-ordinator" ,img: "/assets/team/2025-26/anchor/Divyaaa.jpg" }
       ]
     },
@@ -344,7 +344,7 @@ const TEAM_BY_YEAR = {
       members: [
         { name: "Manas Aware", role: "Alumni and Relation Head" ,img: "/assets/team/2025-26/techincal/exe.png" },
         { name: "Ritesh Yevatkar", role: "Alumni and Relation Head", img: "/assets/team/2025-26/techincal/exe.png" },
-        { name: "Shubhangi Pawar", role: "Alumni Main Co-ordinator" ,img: "/assets/team/2025-26/techincal/exe.png" },
+        { name: "Shubhangi Pawar", role: "Alumni Main Co-ordinator" ,img: "/assets/team/2025-26/alumini/SHUBHANGI GORAKHNATH PAWAR.jpg" },
         { name: "Vishal Bharde", role: "Alumni Main Co-ordinator", img: "/assets/team/2025-26/techincal/exe.png" },
         { name: "Shrish Wadgaonkar", role: "Alumni Joint Co-ordinator" ,img: "/assets/team/2025-26/alumini/Shrish J.S.Wadgaonkar.jpg" }
       ]
@@ -354,7 +354,7 @@ const TEAM_BY_YEAR = {
       members: [
         { name: "Shreyash Sable", role: "SY Co-ordinator" ,img: "/assets/team/2025-26/techincal/exe.png" },
         { name: "Palak Baldawa", role: "SY Joint Co-ordinator", img: "/assets/team/2025-26/techincal/exe.png" },
-        { name: "Tanishq Raut", role: "SY Joint Co-ordinator", img: "/assets/team/2025-26/techincal/exe.png" }
+        { name: "Tanishq Raut", role: "SY Joint Co-ordinator", img: "/assets/team/2025-26/SY/Tanishq Raut (Tanishq Raut).jpg" }
       ]
     }
   ],
@@ -365,7 +365,8 @@ const TEAM_BY_YEAR = {
       committee: "Faculty Coordinators",
       members: [
         { name: "Dr. Ganesh Pakle", role: "Head of Department", img: "/assets/team/2025-26/faculty/hod.png" },
-        { name: "Dr. Ankush Sawarkar", role: "Faculty-Coordinator", img: "/assets/team/2025-26/faculty/ads.png" }
+        { name: "Dr. Ankush Sawarkar", role: "Faculty-Coordinator", img: "/assets/team/2025-26/faculty/ads2.png" },
+        { name: "Prof. S. B. Dethe", role: "Dean Student Affairs", img: "/assets/team/2025-26/faculty/sbd.png" }
       ]
     },
     {

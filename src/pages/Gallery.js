@@ -224,8 +224,9 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
-// --- Animated fade/slide variants (classic scroll reveal style) ---
+// --- Animated fade/slide variants (same as before) ---
 const fadeUpSection = {
   hidden: { opacity: 0, y: 48 },
   visible: (i = 1) => ({
@@ -241,119 +242,119 @@ const fadeUpImg = (i = 0) => ({
   viewport: { once: true, amount: 0.12 }
 });
 
-const galleryEvents = [
-  {
-    name: "Inauguration of ITSA Club",
-    date: "5 Sept 2024",
-    images: [
-      "/assets/gallery/2024-25/inauguration/1.png",
-      "/assets/gallery/2024-25/inauguration/2.png",
-      "/assets/gallery/2024-25/inauguration/3.png",
-      "/assets/gallery/2024-25/inauguration/4.png",
-      "/assets/gallery/2024-25/inauguration/5.png",
-      "/assets/gallery/2024-25/inauguration/6.png",
-      // ... (all inauguration/teachers' day photos)
-    ]
-  },
-  {
-    name: "Teachers' Day Celebration",
-    date: "5 Sept 2024",
-    images: [
-      "/assets/gallery/2024-25/teachersday/1.png",
-      "/assets/gallery/2024-25/teachersday/2.png",
-      "/assets/gallery/2024-25/teachersday/3.png",
-      "/assets/gallery/2024-25/teachersday/4.png",
-      "/assets/gallery/2024-25/teachersday/5.png",
-      "/assets/gallery/2024-25/teachersday/6.png",
-       "/assets/gallery/2024-25/teachersday/7.png",
-      // ... (all inauguration/teachers' day photos)
-    ]
-  },
-  {
-    name: "Research to Reality: Ethical Guidelines Workshop",
-    date: "13 Sept 2024",
-    images: [
-      "/assets/gallery/2024-25/workshop/1.png",
-      "/assets/gallery/2024-25/workshop/2.png",
-      // ... (all workshop photos)
-    ]
-  },
-  {
-    name: "ITSA Sports Carnival",
-    date: "17–19 Jan 2025",
-    images: [
-      "/assets/gallery/2024-25/sports/1.png",
-      "/assets/gallery/2024-25/sports/2.png",
-      "/assets/gallery/2024-25/sports/3.png",
-      "/assets/gallery/2024-25/sports/4.png",
-      "/assets/gallery/2024-25/sports/5.png",
-      "/assets/gallery/2024-25/sports/6.png",
-      "/assets/gallery/2024-25/sports/7.png",
-      "/assets/gallery/2024-25/sports/8.png",
-      "/assets/gallery/2024-25/sports/9.png",
-      "/assets/gallery/2024-25/sports/10.png",
-      "/assets/gallery/2024-25/sports/11.png",
-      "/assets/gallery/2024-25/sports/12.png",
-      "/assets/gallery/2024-25/sports/13.png",
+// --- All gallery events grouped by year with full images ---
 
-      // ... (add all sports carnival photos)
-    ]
-  },
-  {
-    name: "Coding Contest under Pragyaa2k25",
-    date: "22 Feb 2025",
-    images: [
-      "/assets/gallery/2024-25/pragyaa/coding.png",
-      // ... (all coding contest photos)
-    ]
-  },
-  {
-    name: "Workshop on Python for AI/ML",
-    date: "22–23 Feb 2025",
-    images: [
-      "/assets/gallery/2024-25/workshop/3.png",
-      // ... (all workshop photos)
-    ]
-  },
-  {
-    name: "DSA Coding Contest",
-    date: "8 Apr 2025",
-    images: [
-      "/assets/gallery/2024-25/techeve2/1.png",
-      "/assets/gallery/2024-25/techeve2/2.png",
-      "/assets/gallery/2024-25/techeve2/3.png",
-      // ... (all DSA contest photos)
-    ]
-  },
-  {
-    name: "Problem-Solving Test (DSA/Tech Event)",
-    date: "5 Oct 2024",
-    images: [
-      "/assets/gallery/2024-25/techeve1/1.png",
-      "/assets/gallery/2024-25/techeve1/2.png",
-      // ... (all event photos)
-    ]
-  },
-  {
-    name: "Poster Presentation & Republic Day Celebration",
-    date: "26 Jan 2025",
-    images: [
-      "/assets/gallery/2024-25/posterpresentation_republicday/1.png",
-      "/assets/gallery/2024-25/posterpresentation_republicday/2.png",
-      "/assets/gallery/2024-25/posterpresentation_republicday/3.png",
-      "/assets/gallery/2024-25/posterpresentation_republicday/4.png",
-      "/assets/gallery/2024-25/posterpresentation_republicday/5.png",
-      "/assets/gallery/2024-25/posterpresentation_republicday/republicday1.jpg",
-      "/assets/gallery/2024-25/posterpresentation_republicday/republicday2.jpg",
-      // "/assets/gallery/2024-25/posterpresentation_republicday/republicday3.mp4",
-      // ... (all poster/republic day photos)
-    ]
-  }
-];
-
+const galleryByYear = {
+  "2024-25": [
+    {
+      name: "Inauguration of ITSA Club",
+      date: "5 Sept 2024",
+      images: [
+        "/assets/gallery/2024-25/inauguration/1.png",
+        "/assets/gallery/2024-25/inauguration/2.png",
+        "/assets/gallery/2024-25/inauguration/3.png",
+        "/assets/gallery/2024-25/inauguration/4.png",
+        "/assets/gallery/2024-25/inauguration/5.png",
+        "/assets/gallery/2024-25/inauguration/6.png"
+      ]
+    },
+    {
+      name: "Teachers' Day Celebration",
+      date: "5 Sept 2024",
+      images: [
+        "/assets/gallery/2024-25/teachersday/1.png",
+        "/assets/gallery/2024-25/teachersday/2.png",
+        "/assets/gallery/2024-25/teachersday/3.png",
+        "/assets/gallery/2024-25/teachersday/4.png",
+        "/assets/gallery/2024-25/teachersday/5.png",
+        "/assets/gallery/2024-25/teachersday/6.png",
+        "/assets/gallery/2024-25/teachersday/7.png"
+      ]
+    },
+    {
+      name: "Research to Reality: Ethical Guidelines Workshop",
+      date: "13 Sept 2024",
+      images: [
+        "/assets/gallery/2024-25/workshop/1.png",
+        "/assets/gallery/2024-25/workshop/2.png"
+      ]
+    },
+    {
+      name: "ITSA Sports Carnival",
+      date: "17–19 Jan 2025",
+      images: [
+        "/assets/gallery/2024-25/sports/1.png",
+        "/assets/gallery/2024-25/sports/2.png",
+        "/assets/gallery/2024-25/sports/3.png",
+        "/assets/gallery/2024-25/sports/4.png",
+        "/assets/gallery/2024-25/sports/5.png",
+        "/assets/gallery/2024-25/sports/6.png",
+        "/assets/gallery/2024-25/sports/7.png",
+        "/assets/gallery/2024-25/sports/8.png",
+        "/assets/gallery/2024-25/sports/9.png",
+        "/assets/gallery/2024-25/sports/10.png",
+        "/assets/gallery/2024-25/sports/11.png",
+        "/assets/gallery/2024-25/sports/12.png",
+        "/assets/gallery/2024-25/sports/13.png"
+      ]
+    },
+    {
+      name: "Coding Contest under Pragyaa2k25",
+      date: "22 Feb 2025",
+      images: [
+        "/assets/gallery/2024-25/pragyaa/coding.png"
+      ]
+    },
+    {
+      name: "Workshop on Python for AI/ML",
+      date: "22–23 Feb 2025",
+      images: [
+        "/assets/gallery/2024-25/workshop/3.png"
+      ]
+    },
+    {
+      name: "DSA Coding Contest",
+      date: "8 Apr 2025",
+      images: [
+        "/assets/gallery/2024-25/techeve2/1.png",
+        "/assets/gallery/2024-25/techeve2/2.png",
+        "/assets/gallery/2024-25/techeve2/3.png"
+      ]
+    },
+    {
+      name: "Problem-Solving Test (DSA/Tech Event)",
+      date: "5 Oct 2024",
+      images: [
+        "/assets/gallery/2024-25/techeve1/1.png",
+        "/assets/gallery/2024-25/techeve1/2.png"
+      ]
+    },
+    {
+      name: "Poster Presentation & Republic Day Celebration",
+      date: "26 Jan 2025",
+      images: [
+        "/assets/gallery/2024-25/posterpresentation_republicday/1.png",
+        "/assets/gallery/2024-25/posterpresentation_republicday/2.png",
+        "/assets/gallery/2024-25/posterpresentation_republicday/3.png",
+        "/assets/gallery/2024-25/posterpresentation_republicday/4.png",
+        "/assets/gallery/2024-25/posterpresentation_republicday/5.png",
+        "/assets/gallery/2024-25/posterpresentation_republicday/republicday1.jpg",
+        "/assets/gallery/2024-25/posterpresentation_republicday/republicday2.jpg"
+      ]
+    }
+  ],
+  "2025-26": [
+    // Empty template for future events and images
+  ]
+};
 
 export default function Gallery() {
   const [lightbox, setLightbox] = useState({ open: false, img: "", desc: "" });
+  const [selectedYear, setSelectedYear] = useState("2024-25");
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+
+  const years = Object.keys(galleryByYear);
 
   return (
     <div className="
@@ -363,32 +364,85 @@ export default function Gallery() {
     ">
       <div className="max-w-6xl mx-auto w-full">
         <motion.h2
-          className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#a78bfa] via-[#67e8f9] to-[#7c3aed] mb-12 text-center drop-shadow"
+          className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#a78bfa] via-[#67e8f9] to-[#7c3aed] mb-8 text-center drop-shadow"
           initial={{ opacity: 0, y: -24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           Gallery
         </motion.h2>
-        <div className="space-y-20">
-          {galleryEvents.map((event, idx) => (
-            <motion.section
-              key={event.name}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.15 }}
-              variants={fadeUpSection}
-              custom={idx}
-              className="rounded-3xl bg-gradient-to-tr from-[#23214bbc] to-[#2e225a88] backdrop-blur-xl shadow-xl px-3 py-7 md:p-8"
+
+        {/* Year Dropdown Selector */}
+        <div className="flex flex-col items-center mb-12">
+          <label className="font-semibold text-[#67e8f9] mb-2">
+            Select Memory Year:
+          </label>
+          <div className="relative">
+            <button
+              className="
+                flex items-center
+                bg-gradient-to-br from-[#23214bee] to-[#2e225acc]
+                border border-[#a78bfa88]
+                px-6 py-2 font-semibold rounded-2xl shadow
+                hover:bg-[#312866] hover:border-[#67e8f9]
+                transition focus:outline-none
+              "
+              onClick={() => setDropdownOpen((open) => !open)}
             >
-              <div className="mb-5 flex flex-col items-start sm:flex-row sm:items-center gap-3">
-                <h3 className="text-2xl sm:text-3xl font-bold text-[#a78bfa] mb-1 drop-shadow">{event.name}</h3>
-                <span className="block text-sm font-medium rounded-full px-3 py-1 shadow 
-                  bg-gradient-to-r from-[#7c3aed55] via-[#67e8f955] to-[#a78bfa34] text-[#f5f3ff] backdrop-blur-[4px]">
-                  {event.date}
-                </span>
-              </div>
-              {event.images.length > 0 ? (
+              <span className="text-[#67e8f9] text-lg mr-2">{selectedYear}</span>
+              <ChevronDownIcon
+                className={`w-5 h-5 text-[#a78bfa] transition-transform duration-200 ${
+                  dropdownOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+            {dropdownOpen && (
+              <ul
+                className="absolute left-0 mt-2 w-44 bg-gradient-to-br from-[#23214bee] to-[#2e225acc] rounded-xl shadow-lg border border-[#a78bfa44] backdrop-blur-lg z-20"
+              >
+                {years.map((year) => (
+                  <li key={year}>
+                    <button
+                      className={`w-full text-left px-4 py-2 text-md hover:bg-[#2d235a77] rounded-lg ${
+                        year === selectedYear
+                          ? "text-[#67e8f9] font-bold"
+                          : "text-[#c4b5fd]"
+                      }`}
+                      onClick={() => {
+                        setSelectedYear(year);
+                        setDropdownOpen(false);
+                      }}
+                    >
+                      {year}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
+
+
+        {/* Events of selected year */}
+        <div className="space-y-20">
+          {galleryByYear[selectedYear].length > 0 ? (
+            galleryByYear[selectedYear].map((event, idx) => (
+              <motion.section
+                key={event.name}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.15 }}
+                variants={fadeUpSection}
+                custom={idx}
+                className="rounded-3xl bg-gradient-to-tr from-[#23214bbc] to-[#2e225a88] backdrop-blur-xl shadow-xl px-3 py-7 md:p-8"
+              >
+                <div className="mb-5 flex flex-col items-start sm:flex-row sm:items-center gap-3">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-[#a78bfa] mb-1 drop-shadow">{event.name}</h3>
+                  <span className="block text-sm font-medium rounded-full px-3 py-1 shadow 
+                    bg-gradient-to-r from-[#7c3aed55] via-[#67e8f955] to-[#a78bfa34] text-[#f5f3ff] backdrop-blur-[4px]">
+                    {event.date}
+                  </span>
+                </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                   {event.images.map((src, i) => (
                     <motion.img
@@ -409,13 +463,16 @@ export default function Gallery() {
                     />
                   ))}
                 </div>
-              ) : (
-                <div className="text-[#8a96c7] italic ml-2">No pictures yet</div>
-              )}
-            </motion.section>
-          ))}
+              </motion.section>
+            ))
+          ) : (
+            <div className="text-[#8a96c7] italic ml-2 text-center">
+              No pictures yet for {selectedYear}
+            </div>
+          )}
         </div>
       </div>
+
       {/* --- Animated Lightbox Modal --- */}
       {lightbox.open && (
         <motion.div

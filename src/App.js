@@ -8,13 +8,17 @@ import Team from "./pages/Team";
 import Podcast from "./pages/Podcast";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
-    <div className="font-sans bg-[#ede9fe] min-h-screen flex flex-col">
+    <div className="font-sans bg-gradient-to-tr from-[#17132a] via-[#23214b] to-[#2e225a] min-h-screen flex flex-col">
+
       <Router>
+        <ScrollToTop />
         <Navbar />
-        <main className="flex-1 pt-24">
+        <main className="flex-1 pt-10">
+          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
